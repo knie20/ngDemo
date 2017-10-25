@@ -1,0 +1,18 @@
+<button type="button" (click)="callApi()">call json</button>
+
+<div id="table" *ngIf="apiIsCalled">
+  <table>
+    <thead>
+      <th>user</th>
+      <th>id</th>
+      <th>title</th>
+      <th>completed</th>
+    </thead>
+    <tr *ngFor="let todo of todos">
+      <td>{{todo.userId}}</td>
+      <td>{{todo.id}}</td>
+      <td>{{todo.title}}</td>
+      <td>{{todo.completed}}</td>
+    </tr>
+  </table>
+</div>
